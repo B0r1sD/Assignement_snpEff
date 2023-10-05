@@ -75,3 +75,5 @@ Considerations when making pipeline:
 * Versions of the tools being used
 * Working locally and on HPC env (cfr. installation of tools)
 * Pipeline failing somewhere in the middle, not needing to restart pipeline from the beginning
+
+Command `nextflow run pipeline.nf -with-singularity ~/snpEff/snpEff\:5.0.sif` (WIP)
