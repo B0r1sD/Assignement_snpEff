@@ -1,0 +1,2 @@
+*.sif filter=lfs diff=lfs merge=lfs -text
+snpEff:5.0.sif filter=lfs diff=lfs merge=lfs -text

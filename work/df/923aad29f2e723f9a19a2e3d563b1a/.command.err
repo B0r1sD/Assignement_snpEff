@@ -1,0 +1,12 @@
+WARNING: Skipping mount /var/apptainer/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+java.lang.RuntimeException: Property: '/home/guest/snpEff/data/hg38.genome' not found
+	at org.snpeff.interval.Genome.<init>(Genome.java:104)
+	at org.snpeff.snpEffect.Config.readGenomeConfig(Config.java:681)
+	at org.snpeff.snpEffect.Config.readConfig(Config.java:649)
+	at org.snpeff.snpEffect.Config.init(Config.java:480)
+	at org.snpeff.snpEffect.Config.<init>(Config.java:117)
+	at org.snpeff.SnpEff.loadConfig(SnpEff.java:456)
+	at org.snpeff.snpEffect.commandLine.SnpEffCmdEff.run(SnpEffCmdEff.java:938)
+	at org.snpeff.snpEffect.commandLine.SnpEffCmdEff.run(SnpEffCmdEff.java:922)
+	at org.snpeff.SnpEff.run(SnpEff.java:1194)
+	at org.snpeff.SnpEff.main(SnpEff.java:167)

@@ -1,0 +1,16 @@
+BootStrap: docker
+From: ubuntu:20.04
+
+%runscript
+    #command to execute when the container is run
+    exec /path/to/entry_script.sh
+
+%post
+    #required software and dependencies
+    apt-get update && apt-get install -y snpeff parse-snpEff-results
+
+    #data files or databases
+    cp -r /path/to/data /container/path/to/data
+
+    #environment variables
+    export PATH=$PATH:/path/to/installed/bin

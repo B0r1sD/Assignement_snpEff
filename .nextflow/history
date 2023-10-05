@@ -1,0 +1,16 @@
+2023-10-05 02:47:06	-	gigantic_brattain	-	a044e7a2930c5ea97ab14cdebfd6491b	33de8ce9-0e95-4ad6-8ffc-9ba54ebfea1d	nextflow run part1.nf
+2023-10-05 02:49:33	1.4s	zen_sammet	OK	c225fd0ccf627687651774f398926e8f	81d3906d-db5a-4df1-a090-75feeb7f171c	nextflow run part1.nf
+2023-10-05 02:52:22	-	small_torvalds	-	063633c24f3bc55e713a3d214aeac095	cb39c494-9ea5-4505-8b50-2da2bf4fa9d8	nextflow run part1.nf
+2023-10-05 02:54:03	2s	nauseous_colden	ERR	52fb95bf6ce843b2bc2d12484744c82f	714b8b58-be28-4cf0-bba3-650fbdc59abf	nextflow run part1.nf
+2023-10-05 02:55:19	2.1s	golden_wozniak	ERR	0a8b9c034d5ae3aaad45a19cb9b13e36	1732fe35-274e-4c58-b584-e966ea6e5a9e	nextflow run part1.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 02:55:51	3.1s	furious_monod	ERR	b5592ae55492fe8888beb7c6ca33b94b	99ab80e0-167e-433c-b26e-12d510afa51d	nextflow run part1.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 02:59:13	2.6s	sleepy_pike	ERR	551af34480c0e48e2ddccc84a5b4a6d8	b8dc552d-77bb-4295-a976-7d42a03aeff7	nextflow run part1.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 03:01:02	3s	big_shannon	ERR	da1ac6a0d801730a8c3bfeb987365ef3	f9daea4d-ee02-4380-85f3-f1427ea04e94	nextflow run part1.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 03:02:09	2.8s	maniac_fermat	ERR	45610d63228498bc1b6135b82b317fa8	bb0c0c72-ac10-42eb-a3b4-07de9ccd1934	nextflow run part1.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 16:18:34	2s	hungry_chandrasekhar	ERR	c122ec4b246f64ed96083f448fcff1e0	c5488ac8-760c-41cb-a074-50a57da31a89	nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 16:20:05	2.7s	cheeky_baekeland	ERR	f9752518b796f8f9bd585b1ac3c5fb84	ea8affe8-01de-4c09-890e-70484080e26e	nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 16:21:55	4.6s	irreverent_thompson	ERR	8451c4e07a278d7fb663df499e040649	77452032-bc23-4a39-b903-a873778565f0	nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 16:32:24	2s	sleepy_solvay	ERR	3c8dd26fc47e0758d48b174f6b141506	7252ee60-5b79-4156-801a-3baeba6aaaa7	nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 16:34:19	3.2s	determined_lichterman	ERR	ff59a59e9e33ff8d220cebc3c788b0af	f1c1bef5-8a3b-44b3-949f-8cf94119bdd3	nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 16:35:10	3.3s	ecstatic_marconi	ERR	951d68129a1994f8d71dd9a285ad5343	e3ad1883-ccd8-4744-bf28-e4d613067391	nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
+2023-10-05 16:40:22	5.3s	big_yonath	ERR	5581c87249a8d5d4680ae9545705ccb1	1872e6b1-1583-4f88-ac19-8d3f362df438	nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
