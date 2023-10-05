@@ -1,0 +1,2 @@
+WARNING: Skipping mount /var/apptainer/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+Error: Unable to access jarfile snpEff.jar

@@ -1,0 +1,75 @@
+Oct-05 16:18:33.652 [main] DEBUG nextflow.cli.Launcher - $> nextflow run pipeline.nf -with-singularity 'snpEff:5.0.sif'
+Oct-05 16:18:33.776 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Oct-05 16:18:33.799 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/guest/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Oct-05 16:18:33.824 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-05 16:18:33.825 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-05 16:18:33.829 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-05 16:18:33.853 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-05 16:18:33.915 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Singularity container as requested by command-line option `-with-singularity null`
+Oct-05 16:18:33.935 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Oct-05 16:18:33.953 [main] INFO  nextflow.cli.CmdRun - Launching `pipeline.nf` [hungry_chandrasekhar] DSL2 - revision: c122ec4b24
+Oct-05 16:18:33.955 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-05 16:18:33.955 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-05 16:18:33.967 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/guest/.nextflow/secrets/store.json
+Oct-05 16:18:33.972 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7c2327fa] - activable => nextflow.secret.LocalSecretsProvider@7c2327fa
+Oct-05 16:18:34.060 [main] DEBUG nextflow.Session - Session UUID: c5488ac8-760c-41cb-a074-50a57da31a89
+Oct-05 16:18:34.061 [main] DEBUG nextflow.Session - Run name: hungry_chandrasekhar
+Oct-05 16:18:34.061 [main] DEBUG nextflow.Session - Executor pool size: 6
+Oct-05 16:18:34.075 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=18; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-05 16:18:34.114 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.7 build 5853
+  Created: 18-02-2023 20:32 UTC (21:32 CEST)
+  System: Linux 6.2.11-100.fc36.x86_64
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 17.0.6+10
+  Encoding: UTF-8 (UTF-8)
+  Process: 325243@fedora [10.0.2.15]
+  CPUs: 6 - Mem: 7.7 GB (1 GB) - Swap: 7.7 GB (5.3 GB)
+Oct-05 16:18:34.141 [main] DEBUG nextflow.Session - Work-dir: /home/guest/snpEff/PIPE/work [btrfs]
+Oct-05 16:18:34.141 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/guest/snpEff/PIPE/bin
+Oct-05 16:18:34.152 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-05 16:18:34.164 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-05 16:18:34.189 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-05 16:18:34.200 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 7; maxThreads: 1000
+Oct-05 16:18:34.285 [main] DEBUG nextflow.Session - Session start
+Oct-05 16:18:35.092 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-05 16:18:35.199 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-05 16:18:35.200 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-05 16:18:35.208 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-05 16:18:35.214 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=6; memory=7.7 GB; capacity=6; pollInterval=100ms; dumpInterval=5m
+Oct-05 16:18:35.358 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: snpEff
+Oct-05 16:18:35.359 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Oct-05 16:18:35.359 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > snpEff
+Oct-05 16:18:35.360 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-05 16:18:35.360 [main] DEBUG nextflow.Session - Session await
+Oct-05 16:18:35.543 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-05 16:18:35.546 [Task submitter] INFO  nextflow.Session - [26/bf00f1] Submitted process > snpEff
+Oct-05 16:18:35.811 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: snpEff; status: COMPLETED; exit: 1; error: -; workDir: /home/guest/snpEff/PIPE/work/26/bf00f1d59f7325078f9e82b386ba8c]
+Oct-05 16:18:35.827 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'snpEff'
+
+Caused by:
+  Process `snpEff` terminated with an error exit status (1)
+
+Command executed:
+
+  java -jar snpEff.jar -i vcf -o vcf -fastaProt out.fa hg38 00_INPUT/in.vcf > out.vcf
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  WARNING: Skipping mount /var/apptainer/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+  Error: Unable to access jarfile snpEff.jar
+
+Work dir:
+  /home/guest/snpEff/PIPE/work/26/bf00f1d59f7325078f9e82b386ba8c
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Oct-05 16:18:35.838 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-05 16:18:35.846 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `snpEff` terminated with an error exit status (1)
+Oct-05 16:18:35.866 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-05 16:18:35.883 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=179ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Oct-05 16:18:36.043 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-05 16:18:36.064 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

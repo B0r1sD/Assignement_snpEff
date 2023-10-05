@@ -1,0 +1,127 @@
+Oct-05 03:02:09.196 [main] DEBUG nextflow.cli.Launcher - $> nextflow run part1.nf -with-singularity 'snpEff:5.0.sif'
+Oct-05 03:02:09.297 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Oct-05 03:02:09.320 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/guest/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Oct-05 03:02:09.331 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-05 03:02:09.332 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-05 03:02:09.336 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-05 03:02:09.349 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-05 03:02:09.400 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Singularity container as requested by command-line option `-with-singularity null`
+Oct-05 03:02:09.418 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Oct-05 03:02:09.437 [main] INFO  nextflow.cli.CmdRun - Launching `part1.nf` [maniac_fermat] DSL2 - revision: 45610d6322
+Oct-05 03:02:09.437 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-05 03:02:09.437 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-05 03:02:09.448 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/guest/.nextflow/secrets/store.json
+Oct-05 03:02:09.452 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3d7fa3ae] - activable => nextflow.secret.LocalSecretsProvider@3d7fa3ae
+Oct-05 03:02:09.528 [main] DEBUG nextflow.Session - Session UUID: bb0c0c72-ac10-42eb-a3b4-07de9ccd1934
+Oct-05 03:02:09.528 [main] DEBUG nextflow.Session - Run name: maniac_fermat
+Oct-05 03:02:09.528 [main] DEBUG nextflow.Session - Executor pool size: 6
+Oct-05 03:02:09.540 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=18; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-05 03:02:09.571 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.7 build 5853
+  Created: 18-02-2023 20:32 UTC (21:32 CEST)
+  System: Linux 6.2.11-100.fc36.x86_64
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 17.0.6+10
+  Encoding: UTF-8 (UTF-8)
+  Process: 307757@fedora [10.0.2.15]
+  CPUs: 6 - Mem: 7.7 GB (782.9 MB) - Swap: 7.7 GB (5.5 GB)
+Oct-05 03:02:09.596 [main] DEBUG nextflow.Session - Work-dir: /home/guest/snpEff/PIPE/work [btrfs]
+Oct-05 03:02:09.597 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/guest/snpEff/PIPE/bin
+Oct-05 03:02:09.606 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-05 03:02:09.617 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-05 03:02:09.642 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-05 03:02:09.652 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 7; maxThreads: 1000
+Oct-05 03:02:09.742 [main] DEBUG nextflow.Session - Session start
+Oct-05 03:02:10.454 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-05 03:02:10.551 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-05 03:02:10.552 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-05 03:02:10.560 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-05 03:02:10.567 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=6; memory=7.7 GB; capacity=6; pollInterval=100ms; dumpInterval=5m
+Oct-05 03:02:10.676 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: singularityProcess
+Oct-05 03:02:10.676 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Oct-05 03:02:10.681 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > singularityProcess
+Oct-05 03:02:10.682 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-05 03:02:10.683 [main] DEBUG nextflow.Session - Session await
+Oct-05 03:02:10.866 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-05 03:02:10.869 [Task submitter] INFO  nextflow.Session - [a8/39b778] Submitted process > singularityProcess (1)
+Oct-05 03:02:11.551 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: singularityProcess (1); status: COMPLETED; exit: 255; error: -; workDir: /home/guest/snpEff/PIPE/work/a8/39b778fbc0ce3f9263aed4ad1e6a30]
+Oct-05 03:02:11.571 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'singularityProcess (1)'
+
+Caused by:
+  Process `singularityProcess (1)` terminated with an error exit status (255)
+
+Command executed:
+
+  #!/bin/bash
+  singularity exec -B ~/snpEff/PIPE/00_INPUT/:/input snpEff:5.0.sif
+  echo "test"
+  ls -l /input
+         java -jar /usr/local/share/snpeff-5.0-0/snpEff.jar -i vcf -o vcf -fastaProt out.fa hg38 /input/in.vcf > out.vcf
+
+Command exit status:
+  255
+
+Command output:
+  test
+
+Command error:
+  	-fastaProt <file>               : Create an output file containing the resulting protein sequences.
+  	-formatEff                      : Use 'EFF' field compatible with older versions (instead of 'ANN').
+  	-geneId                         : Use gene ID instead of gene name (VCF output). Default: false
+  	-hgvs                           : Use HGVS annotations for amino acid sub-field. Default: true
+  	-hgvsOld                        : Use old HGVS notation. Default: false
+  	-hgvs1LetterAa                  : Use one letter Amino acid codes in HGVS notation. Default: false
+  	-hgvsTrId                       : Use transcript ID in HGVS notation. Default: false
+  	-lof                            : Add loss of function (LOF) and Nonsense mediated decay (NMD) tags.
+  	-noHgvs                         : Do not add HGVS annotations.
+  	-noLof                          : Do not add LOF and NMD annotations.
+  	-noShiftHgvs                    : Do not shift variants according to HGVS notation (most 3prime end).
+  	-oicr                           : Add OICR tag in VCF file. Default: false
+  	-sequenceOntology               : Use Sequence Ontology terms. Default: true
+  
+  Generic options:
+  	-c , -config                 : Specify config file
+  	-configOption name=value     : Override a config file option
+  	-d , -debug                  : Debug mode (very verbose).
+  	-dataDir <path>              : Override data_dir parameter from config file.
+  	-download                    : Download a SnpEff database, if not available locally. Default: true
+  	-nodownload                  : Do not download a SnpEff database, if not available locally.
+  	-h , -help                   : Show this help and exit
+  	-noLog                       : Do not report usage statistics to server
+  	-q , -quiet                  : Quiet mode (do not show any messages or errors)
+  	-v , -verbose                : Verbose mode
+  	-version                     : Show version number and exit
+  
+  Database options:
+  	-canon                       : Only use canonical transcripts.
+  	-canonList <file>            : Only use canonical transcripts, replace some transcripts using the 'gene_id 	 transcript_id' entries in <file>.
+  	-interaction                 : Annotate using inteactions (requires interaciton database). Default: true
+  	-interval <file>             : Use a custom intervals in TXT/BED/BigBed/VCF/GFF file (you may use this option many times)
+  	-maxTSL <TSL_number>         : Only use transcripts having Transcript Support Level lower than <TSL_number>.
+  	-motif                       : Annotate using motifs (requires Motif database). Default: true
+  	-nextProt                    : Annotate using NextProt (requires NextProt database).
+  	-noGenome                    : Do not load any genomic database (e.g. annotate using custom files).
+  	-noExpandIUB                 : Disable IUB code expansion in input variants
+  	-noInteraction               : Disable inteaction annotations
+  	-noMotif                     : Disable motif annotations.
+  	-noNextProt                  : Disable NextProt annotations.
+  	-onlyReg                     : Only use regulation tracks.
+  	-onlyProtein                 : Only use protein coding transcripts. Default: false
+  	-onlyTr <file.txt>           : Only use the transcripts in this file. Format: One transcript ID per line.
+  	-reg <name>                  : Regulation track to use (this option can be used add several times).
+  	-ss , -spliceSiteSize <int>  : Set size for splice sites (donor and acceptor) in bases. Default: 2
+  	-spliceRegionExonSize <int>  : Set size for splice site region within exons. Default: 3 bases
+  	-spliceRegionIntronMin <int> : Set minimum number of bases for splice site region within intron. Default: 3 bases
+  	-spliceRegionIntronMax <int> : Set maximum number of bases for splice site region within intron. Default: 8 bases
+  	-strict                      : Only use 'validated' transcripts (i.e. sequence has been checked). Default: false
+  	-ud , -upDownStreamLen <int> : Set upstream downstream interval length (in bases)
+
+Work dir:
+  /home/guest/snpEff/PIPE/work/a8/39b778fbc0ce3f9263aed4ad1e6a30
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Oct-05 03:02:11.580 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-05 03:02:11.580 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `singularityProcess (1)` terminated with an error exit status (255)
+Oct-05 03:02:11.596 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-05 03:02:11.603 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=672ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Oct-05 03:02:11.816 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-05 03:02:11.842 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
